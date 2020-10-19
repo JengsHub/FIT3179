@@ -12,7 +12,7 @@
       "lookup": "properties.NAME",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/JengsHub/FIT3179Wk9Hw/main/data/lifeExpectancy2019.csv"
+          "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/lifeExpectancy2019.csv"
         },
         "key": "Country",
         "fields": ["Expectancy"]
