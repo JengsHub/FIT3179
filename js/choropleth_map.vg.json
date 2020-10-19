@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "Life expectancy of people around the world 1990",
+  "width": 800,
+  "height": 600,
+  "data": {
+    "url": "https://raw.githubusercontent.com/JengsHub/FIT3179Wk9Hw/main/js/ne_110m_admin_0_countries.topojson",
+    "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+  },
+  "transform": [
+    {
+      "lookup": "properties.NAME",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/JengsHub/FIT3179Wk9Hw/main/data/lifeExpectancy1990.csv"
+        },
+        "key": "Country",
+        "fields": ["Expectancy"]
+      }
+    },
+    {"calculate": "datum.Expectancy", "as": "Life Expectancy"}
+  ],
+  "projection": {"type": "equirectangular"},
+  "mark": {"type": "geoshape"},
+  "encoding": {
+    "color": {
+      "field": "Life Expectancy",
+      "type": "quantitative",
+      "scale": {
+        "type": "threshold",
+        "domain": [30, 40, 50, 60, 70, 80]
+      }
+    },
+    "tooltip": [
+      {"field": "properties.NAME", "type": "nominal", "title": "Country"},
+      {"field": "Life Expectancy", "type": "quantitative"}
+    ]
+  }
+}
