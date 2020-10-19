@@ -38,23 +38,23 @@ Cameroon,CMR,2019,59.292
 Canada,CAN,2019,82.434
 Cape Verde,CPV,2019,72.981
 Cayman Islands,CYM,2019,83.924
-Central African Republic,CAF,2019,53.283
+Central African Rep.,CAF,2019,53.283
 Chad,TCD,2019,54.239
 Channel Islands,OWID_CIS,2019,83.086
 Chile,CHL,2019,80.181
 China,CHN,2019,76.912
 Colombia,COL,2019,77.287
 Comoros,COM,2019,64.321
-Congo (Kinshasa),COG,2019,64.57
+Congo,COG,2019,64.57
 Cook Islands,COK,2019,76.246
 Costa Rica,CRI,2019,80.279
-Cote d'Ivoire,CIV,2019,57.783
+Côte d'Ivoire,CIV,2019,57.783
 Croatia,HRV,2019,78.488
 Cuba,CUB,2019,78.802
 Curacao,CUW,2019,78.88
 Cyprus,CYP,2019,80.982
 Czech Republic,CZE,2019,79.376
-Democratic Republic of Congo,COD,2019,60.681
+Dem. Rep. Congo,COD,2019,60.681
 Denmark,DNK,2019,80.898
 Djibouti,DJI,2019,67.112
 Dominica,DMA,2019,75
@@ -193,7 +193,7 @@ Solomon Islands,SLB,2019,72.996
 Somalia,SOM,2019,57.397
 South Africa,ZAF,2019,64.131
 South Korea,KOR,2019,83.033
-South Sudan,SSD,2019,57.846
+S. Sudan,SSD,2019,57.846
 Spain,ESP,2019,83.565
 Sri Lanka,LKA,2019,76.978
 Sudan,SDN,2019,65.311
