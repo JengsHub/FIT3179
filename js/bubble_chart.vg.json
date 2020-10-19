@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "Life Expectancy of men vs women in the year 2020",
+  "width": 600,
+  "height": 381,
+  "description": "A bubbleplot showing horsepower on x, miles per gallons on y, and binned acceleration on size.",
+  "data": {"url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/LE_men_women_2019.csv"},
+
+  "layer": [
+    {
+      "mark": "circle",
+      "encoding": {
+        "x": {
+          "field": "Male_expectancy", 
+          "type": "quantitative", 
+          "scale": {"domain":[50, 90]},
+          "axis": {"grid": true, "values": [50, 55, 60, 65, 70, 75, 80, 85, 90]},
+          "title": "Life Expectancy of Men"},
+        "y": {
+          "field": "Women_expectancy", 
+          "type": "quantitative", 
+          "scale": {"domain":[50, 90]},
+          "title": "Life Expectancy of Women"},
+        "size": {
+          "field": "Total_population", 
+          "type": "quantitative", 
+          "legend": null, 
+          "scale":{"rangeMax": 5000}},
+
+        "color": {"field": "Continent", "type": "nominal"}
+      }
+    },
+    {
+      "mark": {"type": "line", "color": "firebrick", "opacity":0.2},
+      "transform": [
+        {"regression": "Women_expectancy", "on": "Male_expectancy"}
+      ],
+      "encoding": {
+        "x": {"field": "Male_expectancy", "type": "quantitative"},
+        "y": {"field": "Women_expectancy", "type": "quantitative"}
+      }  
+    }
+  ]
+}
