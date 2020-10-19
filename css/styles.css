@@ -1,17 +1,13 @@
-#LE_choropleth_map {
-  width: 15%;
+
+
+.column {
   float: left;
-}
-
-#LE_choropleth_map_2019 {
-  margin-left: 15%;
-}
-
-#block_container
-{
-  width: 80%;
-  height: 200px;
-  background: aqua;
-  margin: auto;
+  width: 50%;
   padding: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
