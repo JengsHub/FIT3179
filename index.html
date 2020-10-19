@@ -25,6 +25,7 @@
     <h1 style="font-family:Lato;">Life Expectancy</h1>
       <div id="LE_choropleth_map"></div>
       <div id="LE_choropleth_map_2019"></div>
+      <div id="Bubble_chart"></div>
   </article>
  </section>
   
@@ -37,6 +38,11 @@
   
   var spec3 = "js/choropleth_map_2019.vg.json";
   vegaEmbed('#LE_choropleth_map_2019', spec3).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+  var spec4 = "js/bubble_chart.vg.json";
+    vegaEmbed('#Bubble_chart', spec4).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
