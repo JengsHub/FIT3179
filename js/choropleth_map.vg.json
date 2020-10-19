@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": "Life expectancy of people around the world 1990",
-  "width": 800,
+  "width": 500,
   "height": 600,
   "data": {
     "url": "https://raw.githubusercontent.com/JengsHub/FIT3179Wk9Hw/main/js/ne_110m_admin_0_countries.topojson",
