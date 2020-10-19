@@ -1,11 +1,19 @@
 #LE_choropleth_map {
-  width: 200px;
-  height: 200px;
+	top:100px;
+	bottom: 100px; 
+	left: 100px;
+	right: 100px;
+	/*height: 1000px;
+	width: 800px;*/
 }
 
 #LE_choropleth_map_2019 {
-  width: 200px;
-  height: 200px;
+	top:100px;
+	bottom: 100px; 
+	left: 100px;
+	right: 100px;
+	/*height: 1000px;
+	width: 800px;*/
 }
 
 .column {
