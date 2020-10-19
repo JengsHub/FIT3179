@@ -1,4 +1,12 @@
+#LE_choropleth_map {
+  "width": 200,
+  "height": 200,
+}
 
+#LE_choropleth_map_2019 {
+  "width": 200,
+  "height": 200,
+}
 
 .column {
   float: left;
