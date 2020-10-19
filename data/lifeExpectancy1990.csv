@@ -1,0 +1,235 @@
+Country,Code,Year,Expectancy
+Afghanistan,AFG,1990,50.331
+Albania,ALB,1990,71.836
+Algeria,DZA,1990,66.938
+American Samoa,ASM,1990,70.996
+Andorra,AND,1990,76.507
+Angola,AGO,1990,45.306
+Anguilla,AIA,1990,74.716
+Antigua and Barbuda,ATG,1990,71.52
+Argentina,ARG,1990,71.594
+Armenia,ARM,1990,67.879
+Aruba,ABW,1990,73.468
+Australia,AUS,1990,76.933
+Austria,AUT,1990,75.596
+Azerbaijan,AZE,1990,64.827
+Bahamas,BHS,1990,70.199
+Bahrain,BHR,1990,72.39
+Bangladesh,BGD,1990,58.21
+Barbados,BRB,1990,74.704
+Belarus,BLR,1990,70.648
+Belgium,BEL,1990,75.862
+Belize,BLZ,1990,71.242
+Benin,BEN,1990,53.812
+Bermuda,BMU,1990,75.075
+Bhutan,BTN,1990,52.878
+Bolivia,BOL,1990,56.099
+Bonaire Sint Eustatius and Saba,BES,1990,74.417
+Bosnia and Herzegovina,BIH,1990,70.877
+Botswana,BWA,1990,59.191
+Brazil,BRA,1990,66.343
+British Virgin Islands,VGB,1990,73.818
+Brunei,BRN,1990,70.185
+Bulgaria,BGR,1990,71.275
+Burkina Faso,BFA,1990,49.454
+Burundi,BDI,1990,47.829
+Cambodia,KHM,1990,53.595
+Cameroon,CMR,1990,53.362
+Canada,CAN,1990,77.303
+Cape Verde,CPV,1990,64.676
+Cayman Islands,CYM,1990,75.167
+Central African Rep.,CAF,1990,49.104
+Chad,TCD,1990,47.019
+Channel Islands,OWID_CIS,1990,75.41
+Chile,CHL,1990,73.509
+China,CHN,1990,69.145
+Colombia,COL,1990,69.75
+Comoros,COM,1990,56.677
+Cook Islands,COK,1990,68.533
+Costa Rica,CRI,1990,75.654
+Congo,COG,1990,54.638
+Côte d'Ivoire,CIV,1990,53.254
+Croatia,HRV,1990,72.315
+Cuba,CUB,1990,74.638
+Curacao,CUW,1990,74.547
+Cyprus,CYP,1990,76.554
+Czech Republic,CZE,1990,71.89
+Dem. Rep. Congo,COD,1990,49.043
+Denmark,DNK,1990,74.941
+Djibouti,DJI,1990,56.678
+Dominica,DMA,1990,74.104
+Dominican Republic,DOM,1990,66.574
+Ecuador,ECU,1990,68.899
+Egypt,EGY,1990,64.572
+El Salvador,SLV,1990,64
+Equatorial Guinea,GNQ,1990,48.775
+Eritrea,ERI,1990,49.588
+Estonia,EST,1990,69.402
+Ethiopia,ETH,1990,47.099
+Faeroe Islands,FRO,1990,75.766
+Falkland Islands,FLK,1990,75.798
+Fiji,FJI,1990,65.379
+Finland,FIN,1990,75.254
+France,FRA,1990,76.757
+French Guiana,GUF,1990,71.937
+French Polynesia,PYF,1990,68.704
+Gabon,GAB,1990,60.965
+Gambia,GMB,1990,52.221
+Georgia,GEO,1990,70.386
+Germany,DEU,1990,75.488
+Ghana,GHA,1990,56.776
+Gibraltar,GIB,1990,74.608
+Greece,GRC,1990,76.552
+Greenland,GRL,1990,64.447
+Grenada,GRD,1990,69.598
+Guadeloupe,GLP,1990,73.718
+Guam,GUM,1990,71.925
+Guatemala,GTM,1990,62.261
+Guinea,GIN,1990,49.987
+Guinea-Bissau,GNB,1990,47.095
+Guyana,GUY,1990,63.287
+Haiti,HTI,1990,54.265
+Honduras,HND,1990,66.723
+Hong Kong,HKG,1990,77.455
+Hungary,HUN,1990,69.328
+Iceland,ISL,1990,78.078
+India,IND,1990,57.865
+Indonesia,IDN,1990,62.32
+Iran,IRN,1990,63.837
+Iraq,IRQ,1990,66.011
+Ireland,IRL,1990,74.809
+Isle of Man,IMN,1990,75.773
+Israel,ISR,1990,76.582
+Italy,ITA,1990,76.942
+Jamaica,JAM,1990,73.204
+Japan,JPN,1990,79.004
+Jordan,JOR,1990,69.872
+Kazakhstan,KAZ,1990,66.776
+Kenya,KEN,1990,57.406
+Kiribati,KIR,1990,59.636
+Kuwait,KWT,1990,72.15
+Kyrgyzstan,KGZ,1990,66.337
+Laos,LAO,1990,53.364
+Latvia,LVA,1990,69.053
+Lebanon,LBN,1990,70.266
+Lesotho,LSO,1990,59.837
+Liberia,LBR,1990,46.046
+Libya,LBY,1990,68.503
+Liechtenstein,LIE,1990,76.101
+Lithuania,LTU,1990,70.682
+Luxembourg,LUX,1990,75.159
+Macao,MAC,1990,77.296
+Macedonia,MKD,1990,71.152
+Madagascar,MDG,1990,51.003
+Malawi,MWI,1990,46.096
+Malaysia,MYS,1990,70.865
+Maldives,MDV,1990,61.529
+Mali,MLI,1990,45.746
+Malta,MLT,1990,76.912
+Marshall Islands,MHL,1990,63.004
+Martinique,MTQ,1990,74.789
+Mauritania,MRT,1990,59.688
+Mauritius,MUS,1990,69.425
+Mayotte,MYT,1990,72.141
+Mexico,MEX,1990,70.866
+Micronesia (country),FSM,1990,63.605
+Moldova,MDA,1990,67.643
+Monaco,MCO,1990,77.162
+Mongolia,MNG,1990,60.268
+Montenegro,MNE,1990,74.627
+Montserrat,MSR,1990,73.367
+Morocco,MAR,1990,64.732
+Mozambique,MOZ,1990,45.261
+Myanmar,MMR,1990,56.849
+Namibia,NAM,1990,61.608
+Nauru,NRU,1990,57.296
+Nepal,NPL,1990,54.404
+Netherlands,NLD,1990,76.993
+New Caledonia,NCL,1990,70.696
+New Zealand,NZL,1990,75.36
+Nicaragua,NIC,1990,64.293
+Niger,NER,1990,43.538
+Nigeria,NGA,1990,45.9
+Niue,NIU,1990,68.439
+North Korea,PRK,1990,69.896
+Northern Mariana Islands,MNP,1990,69.971
+Norway,NOR,1990,76.729
+Oman,OMN,1990,67.18
+Pakistan,PAK,1990,60.1
+Palau,PLW,1990,65.493
+Palestine,PSE,1990,68.048
+Panama,PAN,1990,72.982
+Papua New Guinea,PNG,1990,56.492
+Paraguay,PRY,1990,68.545
+Peru,PER,1990,66.165
+Philippines,PHL,1990,66.366
+Poland,POL,1990,70.823
+Portugal,PRT,1990,74.504
+Puerto Rico,PRI,1990,74.185
+Qatar,QAT,1990,75.824
+Reunion,REU,1990,72.691
+Romania,ROU,1990,69.535
+Russia,RUS,1990,68.047
+Rwanda,RWA,1990,33.413
+Saint Helena,SHN,1990,75.043
+Saint Kitts and Nevis,KNA,1990,68.48
+Saint Lucia,LCA,1990,71.074
+Saint Martin (French part),MAF,1990,73.456
+Saint Pierre and Miquelon,SPM,1990,76.03
+Saint Vincent and the Grenadines,VCT,1990,70.58
+Samoa,WSM,1990,66.281
+San Marino,SMR,1990,79.411
+Sao Tome and Principe,STP,1990,58.247
+Saudi Arabia,SAU,1990,69.078
+Senegal,SEN,1990,57.202
+Serbia,SRB,1990,71.5
+Seychelles,SYC,1990,70.767
+Sierra Leone,SLE,1990,38.563
+Singapore,SGP,1990,75.936
+Sint Maarten (Dutch part),SXM,1990,74.643
+Slovakia,SVK,1990,71.222
+Slovenia,SVN,1990,73.202
+Solomon Islands,SLB,1990,64.365
+Somalia,SOM,1990,45.378
+South Africa,ZAF,1990,63.307
+South Korea,KOR,1990,71.657
+S. Sudan,SSD,1990,43.524
+Spain,ESP,1990,77.215
+Sri Lanka,LKA,1990,69.509
+Sudan,SDN,1990,55.5
+Suriname,SUR,1990,67.436
+Swaziland,SWZ,1990,61.95
+Sweden,SWE,1990,77.637
+Switzerland,CHE,1990,77.568
+Syria,SYR,1990,70.553
+Taiwan,TWN,1990,73.92
+Tajikistan,TJK,1990,58.824
+Tanzania,TZA,1990,50.206
+Thailand,THA,1990,70.248
+Timor,TLS,1990,48.492
+Togo,TGO,1990,55.887
+Tokelau,TKL,1990,74.778
+Tonga,TON,1990,68.935
+Trinidad and Tobago,TTO,1990,68.086
+Tunisia,TUN,1990,68.792
+Turkey,TUR,1990,64.256
+Turkmenistan,TKM,1990,62.81
+Turks and Caicos Islands,TCA,1990,70.696
+Tuvalu,TUV,1990,61.35
+Uganda,UGA,1990,45.853
+Ukraine,UKR,1990,69.835
+United Arab Emirates,ARE,1990,71.939
+United Kingdom,GBR,1990,75.689
+United States of America,USA,1990,75.246
+Uruguay,URY,1990,72.569
+Uzbekistan,UZB,1990,66.481
+Vanuatu,VUT,1990,64.721
+Vatican,VAT,1990,66.476
+Venezuela,VEN,1990,70.658
+Vietnam,VNM,1990,70.551
+Wallis and Futuna,WLF,1990,73.63
+Western Sahara,ESH,1990,57.586
+World,OWID_WRL,1990,64.18
+Yemen,YEM,1990,57.346
+Zambia,ZMB,1990,49.249
+Zimbabwe,ZWE,1990,58.1
