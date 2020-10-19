@@ -16,7 +16,10 @@
 <section class="w3-row-padding w3-center">
   <article class="page with-sidebar large-banner">
     <h1 style="font-family:Lato;">Life Expectancy</h1>
-    <div id="LE_choropleth_map"></div>
+    <div id="block_container"> 
+      <div id="LE_choropleth_map"></div>
+      <div id="LE_choropleth_map_2019"></div>
+    </div>
   </article>
 </section>
   
@@ -24,6 +27,11 @@
 
   var spec2 = "js/choropleth_map.vg.json";
   vegaEmbed('#LE_choropleth_map', spec2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+  var spec3 = "js/choropleth_map_2019.vg.json";
+  vegaEmbed('#LE_choropleth_map_2019', spec3).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
