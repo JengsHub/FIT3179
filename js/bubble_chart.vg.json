@@ -4,47 +4,68 @@
   "width": 500,
   "height": 381,
   "description": "A bubbleplot showing horsepower on x, miles per gallons on y, and binned acceleration on size.",
-  "data": {"url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/LE_men_women_2019.csv"},
-
+  "data": {
+    "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/LE_men_women_2019.csv"
+  },
   "layer": [
     {
       "mark": "circle",
       "encoding": {
         "x": {
-          "field": "Male_expectancy", 
-          "type": "quantitative", 
-          "scale": {"domain":[50, 90]},
-          "axis": {"grid": true, "values": [50, 55, 60, 65, 70, 75, 80, 85, 90]},
-          "title": "Life Expectancy of Men"},
+          "field": "Male_expectancy",
+          "type": "quantitative",
+          "scale": {"domain": [50, 90]},
+          "axis": {
+            "grid": true,
+            "values": [50, 55, 60, 65, 70, 75, 80, 85, 90]
+          },
+          "title": "Life Expectancy of Men"
+        },
         "y": {
-          "field": "Women_expectancy", 
-          "type": "quantitative", 
-          "scale": {"domain":[50, 90]},
-          "title": "Life Expectancy of Women"},
+          "field": "Women_expectancy",
+          "type": "quantitative",
+          "scale": {"domain": [50, 90]},
+          "title": "Life Expectancy of Women"
+        },
         "size": {
-          "field": "Total_population", 
-          "type": "quantitative", 
-          "legend": null, 
-          "scale":{"rangeMax": 5000}},
-
+          "field": "Total_population",
+          "type": "quantitative",
+          "legend": null,
+          "scale": {"rangeMax": 5000}
+        },
         "color": {"field": "Continent", "type": "nominal"},
         "tooltip": [
           {"field": "Country", "type": "nominal", "title": "Country"},
-          {"field": "Total_population", "type": "quantitative", "title":"Population"},
-          {"field": "Male_expectancy", "type": "quantitative", "title":"Life Expectancy of Males "},
-          {"field": "Women_expectancy", "type": "quantitative", "title":"Life Expectancy of Females"}
+          {
+            "field": "Total_population",
+            "type": "quantitative",
+            "title": "Population"
+          },
+          {
+            "field": "Male_expectancy",
+            "type": "quantitative",
+            "title": "Life Expectancy of Males "
+          },
+          {
+            "field": "Women_expectancy",
+            "type": "quantitative",
+            "title": "Life Expectancy of Females"
+          }
         ]
       }
     },
     {
-      "mark": {"type": "line", "color": "firebrick", "opacity":0.2},
-      "transform": [
-        {"regression": "Women_expectancy", "on": "Male_expectancy"}
-      ],
+      "data": {
+        "values":[
+          {"x": 50, "y": 50}, 
+          {"x": 90, "y": 90}
+        ]
+      },
+      "mark": {"type": "line", "color": "firebrick", "opacity": 0.2},
       "encoding": {
-        "x": {"field": "Male_expectancy", "type": "quantitative"},
-        "y": {"field": "Women_expectancy", "type": "quantitative"}
-      }  
+        "x": {"field": "x", "type": "quantitative"},
+        "y": {"field": "y", "type": "quantitative"}
+      }
     }
   ]
 }
