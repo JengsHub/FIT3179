@@ -1,24 +1,17 @@
 #LE_choropleth_map {
-	top:100px;
-	bottom: 100px; 
-	left: 100px;
-	right: 100px;
-	/*height: 1000px;
-	width: 800px;*/
-	display:inline;
+  width: 15%;
+  float: left;
 }
 
 #LE_choropleth_map_2019 {
-	top:100px;
-	bottom: 100px; 
-	left: 100px;
-	right: 100px;
-	/*height: 1000px;
-	width: 800px;*/
-	display:inline;
+  margin-left: 15%;
 }
 
 #block_container
 {
-    text-align:center;
+  width: 80%;
+  height: 200px;
+  background: aqua;
+  margin: auto;
+  padding: 10px;
 }
