@@ -62,6 +62,16 @@
   <p style="text-align:left"> More readings regarding this can be found <a href="https://ourworldindata.org/why-do-women-live-longer-than-men"> here</a> .</p>
 </section>
   
+<section class="w3-container w3-center w3-content">
+  <h1 style="font-family:Lato;text-align:left">Is there a link between healthcare expenditure and life expectancy?</h1>
+  <p style="text-align:left">One common way of measuring national healthcare consumption and production is to estimate aggregate expenditure on healthcare.</p>
+  <p style="text-align:left">This visualization shows the cross-country relationship between life expectancy at birth and healthcare expenditure per capita. </p>
+</section>
+
+<section class="w3-container w3-center section_claass">
+  <div class="w3-left" id="connected_scatterplot"></div>
+</section>
+  
 <script type="text/javascript">
 
   var spec2 = "js/choropleth_map.vg.json";
@@ -76,6 +86,11 @@
   
   var spec4 = "js/bubble_chart.vg.json";
     vegaEmbed('#Bubble_chart', spec4).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+  var spec5 = "js/connected_scatterplot.vg.json";
+    vegaEmbed('#connected_scatterplot', spec5).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
