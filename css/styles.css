@@ -25,6 +25,14 @@
 	width: 800px;*/	
 }
 
+#Isotype_chart {
+	top:100px;
+	bottom: 100px; 
+	left: 100px;
+	right: 100px;
+	/*height: 1000px;
+	width: 800px;*/	
+}
 #connected_scatterplot {
 	top:100px;
 	bottom: 100px; 
