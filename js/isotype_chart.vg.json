@@ -7,7 +7,7 @@
   "transform": [
     {
       "calculate": 
-      "{'Nigeria': '🇳🇬', 'Ethiopia': '🇪🇹', 'Egypt': '🇪🇬', 'Democratic Republic of Congo' : '🇨🇩', 'Tanzania': '🇹🇿', 'China': '🇨🇳', 'India': '🇮🇳','Indonesia': '🇮🇩', 'Pakistan': '🇵🇰', 'Bangladesh': '🇧🇩', 'Brazil' : '🇧🇷', 'Colombia': '🇨🇴', 'Argentina': '🇦🇷', 'Peru': '🇵🇪','Venezuela': '🇻🇪', 'United States': '🇺🇸', 'Mexico': '🇲🇽', 'Canada' : '🇨🇩', 'Guatemala': '🇬🇹', 'Cuba': '🇨🇺', 'Germany': '🇩🇪','France': '🇫🇷', 'United Kingdom': '🇬🇧', 'Italy': '🇮🇹', 'Australia' : '🇦🇺', 'New Zealand': '🇳🇿' }[datum.Country]",
+      "{'Nigeria': '🇳🇬', 'Ethiopia': '🇪🇹', 'Egypt': '🇪🇬', 'Democratic Republic of Congo' : '🇨🇩', 'Tanzania': '🇹🇿', 'China': '🇨🇳', 'India': '🇮🇳','Indonesia': '🇮🇩', 'Pakistan': '🇵🇰', 'Bangladesh': '🇧🇩', 'Brazil' : '🇧🇷', 'Colombia': '🇨🇴', 'Chile': '🇨🇱', 'Peru': '🇵🇪','Venezuela': '🇻🇪', 'United States': '🇺🇸', 'Mexico': '🇲🇽', 'Canada' : '🇨🇦', 'Guatemala': '🇬🇹', 'Cuba': '🇨🇺', 'Germany': '🇩🇪','France': '🇫🇷', 'United Kingdom': '🇬🇧', 'Italy': '🇮🇹', 'Australia' : '🇦🇺', 'New Zealand': '🇳🇿' }[datum.Country]",
       "as": "emoji"
     }
   ],
@@ -36,6 +36,9 @@
         {"field": " Life_satisfaction","type": "quantitative", "title": "Life Satisfaction"},
         {"field": " Life_expectancy","type": "quantitative", "title": "Life Expectancy"}
       ],
-      "text" : {"field": "emoji", "type": "nominal"}
+      "text" : {"field": "emoji", "type": "nominal"},
+      "size":{
+        "scale": {"rangeMax": 1000}
+      }
   }
 }
