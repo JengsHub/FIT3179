@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "Life Satifaction vs Life Expectancy",
+  "title": "Life Satisfaction vs Life Expectancy",
   "width": 600,
   "height": 381,
   "data": {"url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/LE_vs_satisfaction.csv"},
@@ -77,7 +77,10 @@
           }
           },
           "text" : {"field": "continent_short", "type": "nominal"},
-          "color": {"field": "continent_short", "type": "nominal"}
+          "color": {"field": "continent_short", "type": "nominal"},
+        "size": {
+          "scale": {"rangeMax": 5000}
+        }
         }
     }    
   ]
