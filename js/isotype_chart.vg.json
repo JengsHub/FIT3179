@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "Life Satifaction vs Life Expectancy",
+  "width": 600,
+  "height": 381,
+  "data": {"url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/LE_vs_satisfaction.csv"},
+  "transform": [
+    {
+      "calculate": 
+      "{'Nigeria': '🇳🇬', 'Ethiopia': '🇪🇹', 'Egypt': '🇪🇬', 'Democratic Republic of Congo' : '🇨🇩', 'Tanzania': '🇹🇿', 'China': '🇨🇳', 'India': '🇮🇳','Indonesia': '🇮🇩', 'Pakistan': '🇵🇰', 'Bangladesh': '🇧🇩', 'Brazil' : '🇧🇷', 'Colombia': '🇨🇴', 'Argentina': '🇦🇷', 'Peru': '🇵🇪','Venezuela': '🇻🇪', 'United States': '🇺🇸', 'Mexico': '🇲🇽', 'Canada' : '🇨🇩', 'Guatemala': '🇬🇹', 'Cuba': '🇨🇺', 'Germany': '🇩🇪','France': '🇫🇷', 'United Kingdom': '🇬🇧', 'Italy': '🇮🇹', 'Australia' : '🇦🇺', 'New Zealand': '🇳🇿' }[datum.Country]",
+      "as": "emoji"
+    }
+  ],
+  "mark": "text",
+  "encoding": {
+    "x": {
+      "field": " Life_satisfaction",
+      "type": "quantitative",
+      "scale": {"domain": [3, 8]},
+      "title" : "Life satisfaction (measured from lowest=0 to highest=10 on Cantril Ladder)",
+      "axis": {
+        "grid": false
+      }
+      },
+    "y": {
+      "field": " Life_expectancy", 
+      "type": "quantitative",
+      "scale": {"domain": [50, 90]},
+      "title": "Life Expectancy",
+      "axis": {
+        "grid": false
+      }
+      },
+      "tooltip" : [
+        {"field":"Country"},
+        {"field": " Life_satisfaction","type": "quantitative", "title": "Life Satisfaction"},
+        {"field": " Life_expectancy","type": "quantitative", "title": "Life Expectancy"}
+      ],
+      "text" : {"field": "emoji", "type": "nominal"}
+  }
+}
