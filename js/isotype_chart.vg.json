@@ -11,34 +11,74 @@
       "as": "emoji"
     }
   ],
-  "mark": "text",
-  "encoding": {
-    "x": {
-      "field": " Life_satisfaction",
-      "type": "quantitative",
-      "scale": {"domain": [3, 8]},
-      "title" : "Life satisfaction (measured from lowest=0 to highest=10 on Cantril Ladder)",
-      "axis": {
-        "grid": false
+  "layer": [
+    {
+      "mark": "text",
+      "encoding": {
+        "x": {
+          "field": " Life_satisfaction",
+          "type": "quantitative",
+          "scale": {"domain": [3, 8]},
+          "title" : "Life satisfaction (measured from lowest=0 to highest=10 on Cantril Ladder)",
+          "axis": {
+            "grid": false
+          }
+          },
+        "y": {
+          "field": " Life_expectancy", 
+          "type": "quantitative",
+          "scale": {"domain": [50, 90]},
+          "title": "Life Expectancy",
+          "axis": {
+            "grid": false
+          }
+          },
+          "tooltip" : [
+            {"field":"Country"},
+            {"field": " Life_satisfaction","type": "quantitative", "title": "Life Satisfaction"},
+            {"field": " Life_expectancy","type": "quantitative", "title": "Life Expectancy"}
+          ],
+          "text" : {"field": "emoji", "type": "nominal"},
+          "size":{
+            "scale": {"rangeMax": 1000}
+          }
+        }
+    },
+    {
+      "data": {"url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/LE_vs_satisfaction.csv"},
+  "transform": [
+    {
+      "calculate": 
+      "{'South America': 'SA', 'Asia': 'AS', 'Europe': 'EU', 'North America' : 'NA', 'Oceania': 'OC', 'Africa': 'AF'}[datum.Continent]",
+      "as": "continent_short"
       }
-      },
-    "y": {
-      "field": " Life_expectancy", 
-      "type": "quantitative",
-      "scale": {"domain": [50, 90]},
-      "title": "Life Expectancy",
-      "axis": {
-        "grid": false
-      }
-      },
-      "tooltip" : [
-        {"field":"Country"},
-        {"field": " Life_satisfaction","type": "quantitative", "title": "Life Satisfaction"},
-        {"field": " Life_expectancy","type": "quantitative", "title": "Life Expectancy"}
-      ],
-      "text" : {"field": "emoji", "type": "nominal"},
-      "size":{
-        "scale": {"rangeMax": 1000}
-      }
-  }
+    ],
+      "mark": {
+        "type": "text", 
+        "dx": 20
+        },
+      "encoding": {
+        "x": {
+          "field": " Life_satisfaction",
+          "type": "quantitative",
+          "scale": {"domain": [3, 8]},
+          "title" : "Life satisfaction (measured from lowest=0 to highest=10 on Cantril Ladder)",
+          "axis": {
+            "grid": false
+          }
+          },
+        "y": {
+          "field": " Life_expectancy", 
+          "type": "quantitative",
+          "scale": {"domain": [50, 90]},
+          "title": "Life Expectancy",
+          "axis": {
+            "grid": false
+          }
+          },
+          "text" : {"field": "continent_short", "type": "nominal"},
+          "color": {"field": "continent_short", "type": "nominal"}
+        }
+    }    
+  ]
 }
