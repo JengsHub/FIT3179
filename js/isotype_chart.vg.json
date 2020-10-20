@@ -77,11 +77,17 @@
           }
           },
           "text" : {"field": "continent_short", "type": "nominal"},
-          "color": {"field": "continent_short", "type": "nominal"},
+          "color": {
+            "field": "continent_short", 
+            "type": "nominal", 
+            "legend": {
+              "title": "Continents"
+            }
+            },
         "size": {
           "scale": {"rangeMax": 5000}
         }
-        }
+      }
     }    
   ]
 }
