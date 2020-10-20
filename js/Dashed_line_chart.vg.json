@@ -1,0 +1,493 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "United Nation's prediction of Life Expectancy.",
+  "height": 500,
+  "width": 400,
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/Prediction_colours.csv"
+        },
+      "mark": "circle",
+      "encoding": {
+      "x": {
+        "field": "Year", 
+        "type": "ordinal",
+        "axis": {
+          "values": [2000, 2020, 2040, 2060, 2080, 2099]
+        },
+        "title": "Year"
+      },
+      "y": {
+        "field": "Life_expectancy", 
+        "type": "quantitative",
+        "scale": {"domain": [45, 90]},
+        "title": "Life Expectancy"
+      },
+      "color": {"field": "Country", "type": "nominal"},
+      "tooltip" :[
+        {
+          "field": "Country",
+          "type": "nominal"
+        },
+        {
+          "field": "Life_expectancy",
+          "type": "quantitative",
+          "title": "Life Expectancy"
+        },
+        {
+          "field": "Year",
+          "type": "ordinal",
+          "title": "Predicted Year"
+        }           
+      ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/Australian_prediction.csv"
+        },
+      "mark": {"type": "line", "color": "#81a0c2", "opacity": 1},
+      "encoding": {
+      "x": {
+        "field": "Year", 
+        "type": "ordinal",
+        "axis": {
+          "values": [2000, 2020, 2040, 2060, 2080, 2099]
+        },
+        "title": "Year"
+      },
+      "y": {
+        "field": "Life_expectancy", 
+        "type": "quantitative",
+        "scale": {"domain": [40, 90]},
+        "title": "Life Expectancy"
+      },
+      "strokeDash": {"field": "Predicted", "type": "nominal"},
+    "tooltip": [
+        {
+          "field": "Country",
+          "type": "nominal"
+        },
+        {
+          "field": "Life_expectancy",
+          "type": "quantitative",
+          "title": "Life Expectancy"
+        },
+        {
+          "field": "Year",
+          "type": "ordinal",
+          "title": "Predicted Year"
+        }            
+      ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/Brazil_prediction.csv"
+      },
+      "mark": {"type": "line", "color": "#f8a95d", "opacity": 1},
+      "encoding": {
+      "x": {
+        "field": "Year", 
+        "type": "ordinal",
+        "axis": {
+          "values": [2000, 2020, 2040, 2060, 2080, 2099]
+        }
+      },
+      "y": {
+        "field": "Life_expectancy", 
+        "type": "quantitative",
+        "scale": {"domain": [40, 95]}
+      },
+      "strokeDash": {"field": "Predicted", "type": "nominal"},
+      "tooltip": [
+          {
+            "field": "Country",
+            "type": "nominal"
+          },
+          {
+            "field": "Life_expectancy",
+            "type": "quantitative",
+            "title": "Life Expectancy"
+          },
+          {
+            "field": "Year",
+            "type": "ordinal",
+            "title": "Predicted Year"
+          }            
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/Canada_prediciton.csv"
+      },
+      "mark": {"type": "line", "color": "#ec8988", "opacity": 1},
+      "encoding": {
+      "x": {
+        "field": "Year", 
+        "type": "ordinal",
+        "axis": {
+          "values": [2000, 2020, 2040, 2060, 2080, 2099]
+        }
+      },
+      "y": {
+        "field": "Life_expectancy", 
+        "type": "quantitative",
+        "scale": {"domain": [40, 90]}
+      },
+      "strokeDash": {"field": "Predicted", "type": "nominal"},
+      "tooltip": [
+          {
+            "field": "Country",
+            "type": "nominal"
+          },
+          {
+            "field": "Life_expectancy",
+            "type": "quantitative",
+            "title": "Life Expectancy"
+          },
+          {
+            "field": "Year",
+            "type": "ordinal",
+            "title": "Predicted Year"
+          }            
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/China_prediction.csv"
+      },
+      "mark": {"type": "line", "color": "#9cccc9", "opacity": 1},
+      "encoding": {
+      "x": {
+        "field": "Year", 
+        "type": "ordinal",
+        "axis": {
+          "values": [2000, 2020, 2040, 2060, 2080, 2099]
+        }
+      },
+      "y": {
+        "field": "Life_expectancy", 
+        "type": "quantitative",
+        "scale": {"domain": [40, 90]}
+      },
+      "strokeDash": {"field": "Predicted", "type": "nominal"},
+      "tooltip": [
+          {
+            "field": "Country",
+            "type": "nominal"
+          },
+          {
+            "field": "Life_expectancy",
+            "type": "quantitative",
+            "title": "Life Expectancy"
+          },
+          {
+            "field": "Year",
+            "type": "ordinal",
+            "title": "Predicted Year"
+          }            
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/Ethiopia_prediction.csv"
+      },
+      "mark": {"type": "line", "color": "#87be81", "opacity": 1},
+      "encoding": {
+      "x": {
+        "field": "Year", 
+        "type": "ordinal",
+        "axis": {
+          "values": [2000, 2020, 2040, 2060, 2080, 2099]
+        }
+      },
+      "y": {
+        "field": "Life_expectancy", 
+        "type": "quantitative",
+        "scale": {"domain": [40, 90]}
+      },
+      "strokeDash": {"field": "Predicted", "type": "nominal"},
+      "tooltip": [
+          {
+            "field": "Country",
+            "type": "nominal"
+          },
+          {
+            "field": "Life_expectancy",
+            "type": "quantitative",
+            "title": "Life Expectancy"
+          },
+          {
+            "field": "Year",
+            "type": "ordinal",
+            "title": "Predicted Year"
+          }            
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/France_predicted.csv"
+      },
+      "mark": {"type": "line", "color": "#f3da75", "opacity": 1},
+      "encoding": {
+      "x": {
+        "field": "Year", 
+        "type": "ordinal",
+        "axis": {
+          "values": [2000, 2020, 2040, 2060, 2080, 2099]
+        }
+      },
+      "y": {
+        "field": "Life_expectancy", 
+        "type": "quantitative",
+        "scale": {"domain": [40, 90]}
+      },
+      "strokeDash": {"field": "Predicted", "type": "nominal"},
+      "tooltip": [
+          {
+            "field": "Country",
+            "type": "nominal"
+          },
+          {
+            "field": "Life_expectancy",
+            "type": "quantitative",
+            "title": "Life Expectancy"
+          },
+          {
+            "field": "Year",
+            "type": "ordinal",
+            "title": "Predicted Year"
+          }            
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/Germany_prediction.csv"
+      },
+      "mark": {"type": "line", "color": "#c9a1be", "opacity": 1},
+      "encoding": {
+      "x": {
+        "field": "Year", 
+        "type": "ordinal",
+        "axis": {
+          "values": [2000, 2020, 2040, 2060, 2080, 2099]
+        }
+      },
+      "y": {
+        "field": "Life_expectancy", 
+        "type": "quantitative",
+        "scale": {"domain": [40, 90]}
+      },
+      "strokeDash": {"field": "Predicted", "type": "nominal"},
+      "tooltip": [
+          {
+            "field": "Country",
+            "type": "nominal"
+          },
+          {
+            "field": "Life_expectancy",
+            "type": "quantitative",
+            "title": "Life Expectancy"
+          },
+          {
+            "field": "Year",
+            "type": "ordinal",
+            "title": "Predicted Year"
+          }            
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/India_prediction.csv"
+      },
+      "mark": {"type": "line", "color": "#ffbac1", "opacity": 1},
+      "encoding": {
+      "x": {
+        "field": "Year", 
+        "type": "ordinal",
+        "axis": {
+          "values": [2000, 2020, 2040, 2060, 2080, 2099]
+        }
+      },
+      "y": {
+        "field": "Life_expectancy", 
+        "type": "quantitative",
+        "scale": {"domain": [40, 90]}
+      },
+      "strokeDash": {"field": "Predicted", "type": "nominal"},
+      "tooltip": [
+          {
+            "field": "Country",
+            "type": "nominal"
+          },
+          {
+            "field": "Life_expectancy",
+            "type": "quantitative",
+            "title": "Life Expectancy"
+          },
+          {
+            "field": "Year",
+            "type": "ordinal",
+            "title": "Predicted Year"
+          }            
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/Mexico_prediction.csv"
+      },
+      "mark": {"type": "line", "color": "#ba9e8d", "opacity": 1},
+      "encoding": {
+      "x": {
+        "field": "Year", 
+        "type": "ordinal",
+        "axis": {
+          "values": [2000, 2020, 2040, 2060, 2080, 2099]
+        }
+      },
+      "y": {
+        "field": "Life_expectancy", 
+        "type": "quantitative",
+        "scale": {"domain": [40, 90]}
+      },
+      "strokeDash": {"field": "Predicted", "type": "nominal"},
+      "tooltip": [
+          {
+            "field": "Country",
+            "type": "nominal"
+          },
+          {
+            "field": "Life_expectancy",
+            "type": "quantitative",
+            "title": "Life Expectancy"
+          },
+          {
+            "field": "Year",
+            "type": "ordinal",
+            "title": "Predicted Year"
+          }            
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/Nigeria_prediction.csv"
+      },
+      "mark": {"type": "line", "color": "#cfc8c5", "opacity": 1},
+      "encoding": {
+      "x": {
+        "field": "Year", 
+        "type": "ordinal",
+        "axis": {
+          "values": [2000, 2020, 2040, 2060, 2080, 2099]
+        }
+      },
+      "y": {
+        "field": "Life_expectancy", 
+        "type": "quantitative",
+        "scale": {"domain": [40, 90]}
+      },
+      "strokeDash": {"field": "Predicted", "type": "nominal"},
+      "tooltip": [
+          {
+            "field": "Country",
+            "type": "nominal"
+          },
+          {
+            "field": "Life_expectancy",
+            "type": "quantitative",
+            "title": "Life Expectancy"
+          },
+          {
+            "field": "Year",
+            "type": "ordinal",
+            "title": "Predicted Year"
+          }            
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/PNG_prediction.csv"
+      },
+      "mark": {"type": "line", "color": "#81a0c2", "opacity": 1},
+      "encoding": {
+      "x": {
+        "field": "Year", 
+        "type": "ordinal",
+        "axis": {
+          "values": [2000, 2020, 2040, 2060, 2080, 2099]
+        }
+      },
+      "y": {
+        "field": "Life_expectancy", 
+        "type": "quantitative",
+        "scale": {"domain": [40, 90]}
+      },
+      "strokeDash": {"field": "Predicted", "type": "nominal"},
+      "tooltip": [
+          {
+            "field": "Country",
+            "type": "nominal"
+          },
+          {
+            "field": "Life_expectancy",
+            "type": "quantitative",
+            "title": "Life Expectancy"
+          },
+          {
+            "field": "Year",
+            "type": "ordinal",
+            "title": "Predicted Year"
+          }            
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/US_prediction.csv"
+      },
+      "mark": {"type": "line", "color": "#f8a95d", "opacity": 1},
+      "encoding": {
+      "x": {
+        "field": "Year", 
+        "type": "ordinal",
+        "axis": {
+          "values": [2000, 2020, 2040, 2060, 2080, 2099]
+        }
+      },
+      "y": {
+        "field": "Life_expectancy", 
+        "type": "quantitative",
+        "scale": {"domain": [40, 90]}
+      },
+      "strokeDash": {"field": "Predicted", "type": "nominal", "legend": null},
+      "tooltip": [
+          {
+            "field": "Country",
+            "type": "nominal"
+          },
+          {
+            "field": "Life_expectancy",
+            "type": "quantitative",
+            "title": "Life Expectancy"
+          },
+          {
+            "field": "Year",
+            "type": "ordinal",
+            "title": "Predicted Year"
+          }            
+        ]
+      }
+    }
+  ]
+}
