@@ -1,0 +1,28 @@
+Country, Code, Life_satisfaction, Life_expectancy, Continent
+Nigeria,NGA,5.252288,54.332,Africa
+Ethiopia,ETH,4.379262447,66.24,Africa
+Egypt,2018,4.005450726,71.825,Africa
+Democratic Republic of Congo,COD,4.311033249,60.026,Africa
+Tanzania,TZA,3.445023298,65.015,Africa
+China,CHN,5.131433964,76.704,Asia
+India,IND,3.818068743,69.416,Asia
+Indonesia,IDN,5.340295792,71.509,Asia
+Pakistan,PAK,5.471553802,67.114,Asia
+Bangladesh,BGD,4.499217033,72.32,Asia
+Brazil,BRA,6.190921783,75.672,South America
+Colombia,CO,5.983512402,77.109,South America
+Argentina,ARG,5.792796612,76.52,South America
+Peru,PER,5.679661274,76.516,South America
+Venezuela,VEN,5.005663395,72.128,South America
+United States,USA,6.882684708,78.851,North America
+Mexico,MEX,6.549578667,74.992,North America
+Canada,CAN,7.175496578,82.315,North America
+Guatemala,GTM,6.626591682,74.063,North America
+Cuba,CUB,5.417868614,77.864,North America
+Germany,DEU,7.118364334,81.18,Europe
+France,FRA,6.665903568,82.541,Europe
+United Kingdom,GBR,7.233445168,81.236,Europe
+Italy,ITA,6.516526699,83.352,Europe
+Spain,ESP,6.513370991,83.433,Europe
+Australia,AUS,7.17699337,83.281,Oceania
+New Zealand,NZL,7.370285988,82.145,Oceania
