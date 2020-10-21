@@ -6,6 +6,13 @@
   "data": {"url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/LE_vs_HE_2014.csv"},
   "layer": [
     {
+      "selection": {
+        "continent_highlight" : {
+        "type" : "multi",
+        "fields": ["Continent"],
+        "bind": "legend"
+        }
+      },
       "mark": {"type": "point"},
       "encoding": {
         "x": {
@@ -48,13 +55,18 @@
               "type": "quantitative",
               "title": "Life expectancy"              
             }
-          ]
+          ],
+        "opacity": {
+          "condition": {"selection": "continent_highlight", "value": 0.6},
+          "value": 0.2
+  }
       }
     },
     {
       "data": {
         "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/LE_vs_HE_1995.csv"
       },
+      "transform": [],
       "mark": {"type": "circle", "opacity": 1 },
       "encoding": {
         "x": {
@@ -90,7 +102,11 @@
               "type": "quantitative",
               "title": "Life expectancy"              
             }
-          ]
+          ],
+          "opacity": {
+            "condition": {"selection": "continent_highlight", "value": 0.6},
+          "value": 0.2
+  }
       }      
     },
     {
@@ -118,7 +134,32 @@
             "values": [30, 40, 50, 60, 70, 80, 90]
           }
         },
-        "color": {"field": "Continent", "type": "nominal"}
+        "color": {
+          "field": "Continent",
+          "type": "nominal",
+          "scale": {
+          "domain": [
+            "North America",
+            "South America",
+            "Europe",
+            "Africa",
+            "Asia",
+            "Oceania"
+          ],
+          "range": [
+            "#e41a1c",
+            "#984ea3",
+            "#ff7f00",
+            "#df744a",
+            "#377eb8",
+            "#a65628"
+          ]
+          }
+        },
+        "opacity": {
+          "condition": {"selection": "continent_highlight", "value": 1},
+          "value": 0.2
+  }
       }
     }
   ]
