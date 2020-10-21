@@ -3,12 +3,60 @@
   "title": "Life Expectancy of men vs women in the year 2019",
   "width": 500,
   "height": 381,
-  "description": "A bubbleplot showing horsepower on x, miles per gallons on y, and binned acceleration on size.",
   "data": {
     "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/LE_men_women_2019.csv"
   },
+  "params": [
+     {
+        "name": "Population_Above",
+        "value": 0,
+        "bind": {
+        "input": "range",
+        "min": 0,
+        "max": 100000000,
+        "step": 1000000,
+        "name": "Minimum Population: "
+      }
+    },
+    {
+      "name": "Continent_selection",
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "North America",
+          "South America",
+          "Europe",
+          "Africa",
+          "Asia",
+          "Oceania"
+        ],
+      "labels":[
+          "Show All",
+          "North America",
+          "South America",
+          "Europe",
+          "Africa",
+          "Asia",
+          "Oceania"
+        ],
+      "name": "Continent Selection: "
+        }
+    }    
+  ],
   "layer": [
     {
+      "transform": [
+        {"filter": "datum.Total_population > Population_Above"},
+        {"filter": "Continent_selection == null || datum.Continent ==  Continent_selection"}
+      ],
+      "selection": {
+        "continent_highlight" : {
+        "type" : "multi",
+        "fields": ["Continent"],
+        "bind": "legend"
+        }
+      },
       "mark": "circle",
       "encoding": {
         "x": {
@@ -44,14 +92,20 @@
           {
             "field": "Male_expectancy",
             "type": "quantitative",
-            "title": "Life Expectancy of Males "
+            "title": "Life Expectancy of Males ",
+            "format": ".2f"
           },
           {
             "field": "Women_expectancy",
             "type": "quantitative",
-            "title": "Life Expectancy of Females"
+            "title": "Life Expectancy of Females",
+            "format": ".2f"
           }
-        ]
+        ],
+        "opacity": {
+          "condition": {"selection": "continent_highlight", "value": 0.6},
+          "value": 0.2
+  }
       }
     },
     {
