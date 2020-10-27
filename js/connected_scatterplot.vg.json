@@ -2,64 +2,61 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": "Life expectancy vs. Healthcare expenditure from 1995 to 2014",
   "width": 600,
-  "height": 400,  
-  "data": {"url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/LE_vs_HE_2014.csv"},
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/LE_vs_HE_2014.csv"
+  },
   "layer": [
     {
       "selection": {
-        "continent_highlight" : {
-        "type" : "multi",
-        "fields": ["Continent"],
-        "bind": "legend"
+        "continent_highlight": {
+          "type": "multi",
+          "fields": ["Continent"],
+          "bind": "legend"
         }
       },
       "mark": {"type": "point"},
       "encoding": {
         "x": {
-          "field": "Health_expenditure", 
-          "type": "quantitative", 
-          "scale":{"type": "log", "base": 10},
-          "axis" : {
+          "field": "Health_expenditure",
+          "type": "quantitative",
+          "scale": {"type": "log", "base": 10},
+          "axis": {
             "grid": true,
             "values": [20, 50, 100, 200, 500, 1000, 2000, 5000]
           },
-          "title":"Healthcare Expenditure per capita ($)"
-          },
+          "title": "Healthcare Expenditure per capita ($)"
+        },
         "y": {
-          "field": "Life_expectancy", 
+          "field": "Life_expectancy",
           "type": "quantitative",
           "title": "Life Expectancy",
-          "axis" : {
-            "grid": true,
-            "values": [30, 40, 50, 60, 70, 80, 90]
-          },
+          "axis": {"grid": true, "values": [30, 40, 50, 60, 70, 80, 90]},
           "scale": {"domain": [30, 90]}
+        },
+        "color": {"field": "Continent", "type": "nominal"},
+        "tooltip": [
+          {"field": "Country", "type": "nominal", "title": "Country"},
+          {
+            "field": "Health_expenditure",
+            "type": "quantitative",
+            "title": "Healthcare Expenditure ($)"
           },
-          "color": {
-            "field":"Continent",
-            "type": "nominal"
+          {
+            "field": "Life_expectancy",
+            "type": "quantitative",
+            "title": "Life expectancy"
           },
-          "tooltip" : [
-            {
-              "field":"Country", 
-              "type": "nominal", 
-              "title": "Country"
-            },
-            {
-              "field": "Health_expenditure", 
-              "type": "quantitative",
-              "title": "Healthcare Expenditure ($)"
-            },
-            {
-              "field": "Life_expectancy", 
-              "type": "quantitative",
-              "title": "Life expectancy"              
-            }
-          ],
+          {
+            "field": "Year",
+            "type": "ordinal",
+            "title": "Year"
+          }
+        ],
         "opacity": {
           "condition": {"selection": "continent_highlight", "value": 0.6},
           "value": 0.2
-  }
+        }
       }
     },
     {
@@ -67,61 +64,55 @@
         "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/LE_vs_HE_1995.csv"
       },
       "transform": [],
-      "mark": {"type": "circle", "opacity": 1 },
+      "mark": {"type": "circle", "opacity": 1},
       "encoding": {
         "x": {
-          "field": "Health_expenditure", 
-          "type": "quantitative", 
-          "scale":{"type": "log", "base": 10},
-          "axis" : {
+          "field": "Health_expenditure",
+          "type": "quantitative",
+          "scale": {"type": "log", "base": 10},
+          "axis": {
             "grid": true,
             "values": [20, 50, 100, 200, 500, 1000, 2000, 5000]
           }
+        },
+        "y": {"field": "Life_expectancy", "type": "quantitative"},
+        "color": {"field": "Continent", "type": "nominal"},
+        "tooltip": [
+          {"field": "Country", "type": "nominal", "title": "Country"},
+          {
+            "field": "Health_expenditure",
+            "type": "quantitative",
+            "title": "Healthcare Expenditure ($)"
           },
-        "y": {
-          "field": "Life_expectancy", 
-          "type": "quantitative"
+          {
+            "field": "Life_expectancy",
+            "type": "quantitative",
+            "title": "Life expectancy"
           },
-          "color": {
-            "field":"Continent",
-            "type": "nominal"
-          },
-          "tooltip" : [
-            {
-              "field":"Country", 
-              "type": "nominal", 
-              "title": "Country"
-            },
-            {
-              "field": "Health_expenditure", 
-              "type": "quantitative",
-              "title": "Healthcare Expenditure ($)"
-            },
-            {
-              "field": "Life_expectancy", 
-              "type": "quantitative",
-              "title": "Life expectancy"              
-            }
-          ],
-          "opacity": {
-            "condition": {"selection": "continent_highlight", "value": 0.6},
+          {
+            "field": "Year",
+            "type": "ordinal",
+            "title": "Year"
+          }
+        ],
+        "opacity": {
+          "condition": {"selection": "continent_highlight", "value": 0.6},
           "value": 0.2
-  }
-      }      
+        }
+      }
     },
     {
-      "data": {"url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/LE_vs_HE.csv"},
+      "data": {
+        "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/LE_vs_HE.csv"
+      },
       "mark": "line",
       "encoding": {
-          "detail": {
-            "field": "Country",
-            "type": "nominal"
-          },
+        "detail": {"field": "Country", "type": "nominal"},
         "x": {
-          "field": "Health_expenditure", 
-          "type": "quantitative", 
-          "scale":{"type": "log", "base": 10},
-          "axis" : {
+          "field": "Health_expenditure",
+          "type": "quantitative",
+          "scale": {"type": "log", "base": 10},
+          "axis": {
             "grid": true,
             "values": [20, 50, 100, 200, 500, 1000, 2000, 5000]
           }
@@ -129,37 +120,34 @@
         "y": {
           "field": "Life_expectancy",
           "type": "quantitative",
-          "axis" : {
-            "grid": true,
-            "values": [30, 40, 50, 60, 70, 80, 90]
-          }
+          "axis": {"grid": true, "values": [30, 40, 50, 60, 70, 80, 90]}
         },
         "color": {
           "field": "Continent",
           "type": "nominal",
           "scale": {
-          "domain": [
-            "North America",
-            "South America",
-            "Europe",
-            "Africa",
-            "Asia",
-            "Oceania"
-          ],
-          "range": [
-            "#e41a1c",
-            "#984ea3",
-            "#ff7f00",
-            "#df744a",
-            "#377eb8",
-            "#a65628"
-          ]
+            "domain": [
+              "North America",
+              "South America",
+              "Europe",
+              "Africa",
+              "Asia",
+              "Oceania"
+            ],
+            "range": [
+              "#e41a1c",
+              "#984ea3",
+              "#ff7f00",
+              "#df744a",
+              "#377eb8",
+              "#a65628"
+            ]
           }
         },
         "opacity": {
           "condition": {"selection": "continent_highlight", "value": 1},
           "value": 0.2
-  }
+        }
       }
     }
   ]
