@@ -3,11 +3,13 @@
   "title": "Life Satisfaction vs Life Expectancy",
   "width": 600,
   "height": 381,
-  "data": {"url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/LE_vs_satisfaction.csv"},
+  "background":"azure",
+  "data": {
+    "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/LE_vs_satisfaction.csv"
+  },
   "transform": [
     {
-      "calculate": 
-      "{'Nigeria': '🇳🇬', 'Ethiopia': '🇪🇹', 'Egypt': '🇪🇬', 'Democratic Republic of Congo' : '🇨🇩', 'Tanzania': '🇹🇿', 'China': '🇨🇳', 'India': '🇮🇳','Indonesia': '🇮🇩', 'Pakistan': '🇵🇰', 'Bangladesh': '🇧🇩', 'Brazil' : '🇧🇷', 'Colombia': '🇨🇴', 'Chile': '🇨🇱', 'Peru': '🇵🇪','Venezuela': '🇻🇪', 'United States': '🇺🇸', 'Mexico': '🇲🇽', 'Canada' : '🇨🇦', 'Guatemala': '🇬🇹', 'Cuba': '🇨🇺', 'Germany': '🇩🇪','France': '🇫🇷', 'United Kingdom': '🇬🇧', 'Italy': '🇮🇹', 'Australia' : '🇦🇺', 'New Zealand': '🇳🇿' }[datum.Country]",
+      "calculate": "{'Nigeria': '🇳🇬', 'Ethiopia': '🇪🇹', 'Egypt': '🇪🇬', 'Democratic Republic of Congo' : '🇨🇩', 'Tanzania': '🇹🇿', 'China': '🇨🇳', 'India': '🇮🇳','Indonesia': '🇮🇩', 'Pakistan': '🇵🇰', 'Bangladesh': '🇧🇩', 'Brazil' : '🇧🇷', 'Colombia': '🇨🇴', 'Chile': '🇨🇱', 'Peru': '🇵🇪','Venezuela': '🇻🇪', 'United States': '🇺🇸', 'Mexico': '🇲🇽', 'Canada' : '🇨🇦', 'Guatemala': '🇬🇹', 'Cuba': '🇨🇺', 'Germany': '🇩🇪','France': '🇫🇷', 'United Kingdom': '🇬🇧', 'Italy': '🇮🇹', 'Australia' : '🇦🇺', 'New Zealand': '🇳🇿' }[datum.Country]",
       "as": "emoji"
     }
   ],
@@ -19,75 +21,86 @@
           "field": " Life_satisfaction",
           "type": "quantitative",
           "scale": {"domain": [3, 8]},
-          "title" : "Life satisfaction (measured from lowest=0 to highest=10 on Cantril Ladder)",
-          "axis": {
-            "grid": false
-          }
-          },
+          "title": "Life satisfaction (measured from lowest=0 to highest=10 on Cantril Ladder)",
+          "axis": {"grid": false}
+        },
         "y": {
-          "field": " Life_expectancy", 
+          "field": " Life_expectancy",
           "type": "quantitative",
           "scale": {"domain": [50, 90]},
           "title": "Life Expectancy",
-          "axis": {
-            "grid": false
-          }
+          "axis": {"grid": false}
+        },
+        "tooltip": [
+          {"field": "Country"},
+          {
+            "field": " Life_satisfaction",
+            "type": "quantitative",
+            "title": "Life Satisfaction"
           },
-          "tooltip" : [
-            {"field":"Country"},
-            {"field": " Life_satisfaction","type": "quantitative", "title": "Life Satisfaction"},
-            {"field": " Life_expectancy","type": "quantitative", "title": "Life Expectancy"}
-          ],
-          "text" : {"field": "emoji", "type": "nominal"},
-          "size":{
-            "scale": {"rangeMax": 1000}
+          {
+            "field": " Life_expectancy",
+            "type": "quantitative",
+            "title": "Life Expectancy"
           }
-        }
+        ],
+        "text": {"field": "emoji", "type": "nominal"},
+        "size": {"scale": {"rangeMax": 1000}}
+      }
     },
     {
-      "data": {"url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/LE_vs_satisfaction.csv"},
-  "transform": [
-    {
-      "calculate": 
-      "{'South America': 'SA', 'Asia': 'AS', 'Europe': 'EU', 'North America' : 'NA', 'Oceania': 'OC', 'Africa': 'AF'}[datum.Continent]",
-      "as": "continent_short"
-      }
-    ],
-      "mark": {
-        "type": "text", 
-        "dx": 20
-        },
+      "data": {
+        "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/LE_vs_satisfaction.csv"
+      },
+      "transform": [
+        {
+          "calculate": "{'South America': 'SA', 'Asia': 'AS', 'Europe': 'EU', 'North America' : 'NA', 'Oceania': 'OC', 'Africa': 'AF'}[datum.Continent]",
+          "as": "continent_short"
+        }
+      ],
+      "mark": {"type": "text", "dx": 20},
       "encoding": {
         "x": {
           "field": " Life_satisfaction",
           "type": "quantitative",
           "scale": {"domain": [3, 8]},
-          "title" : "Life satisfaction (measured from lowest=0 to highest=10 on Cantril Ladder)",
-          "axis": {
-            "grid": false
-          }
-          },
+          "title": "Life satisfaction (measured from lowest=0 to highest=10 on Cantril Ladder)",
+          "axis": {"grid": false}
+        },
         "y": {
-          "field": " Life_expectancy", 
+          "field": " Life_expectancy",
           "type": "quantitative",
           "scale": {"domain": [50, 90]},
           "title": "Life Expectancy",
-          "axis": {
-            "grid": false
+          "axis": {"grid": false}
+        },
+        "text": {"field": "continent_short", "type": "nominal"},
+        "color": {
+          "field": "continent_short",
+          "type": "nominal",
+          "legend": {"title": "Continents"},
+          "scale": {
+            "domain": [
+              "NA",
+              "SA",
+              "EU",
+              "AF",
+              "AS",
+              "OC"
+            ],
+            "range": [
+              "#e41a1c",
+              "#984ea3",
+              "#ff7f00",
+              "#df744a",
+              "#377eb8",
+              "#a65628"
+            ]
           }
-          },
-          "text" : {"field": "continent_short", "type": "nominal"},
-          "color": {
-            "field": "continent_short", 
-            "type": "nominal", 
-            "legend": {
-              "title": "Continents"
-            }
-            },
-        "size": {
-          "scale": {"rangeMax": 5000}
-        }
+        },
+        "size": {"scale": {"rangeMax": 5000}},
+        "opacity": {"value": 0.6}
       }
-    }    
+    }
   ]
 }
