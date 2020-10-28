@@ -43,11 +43,10 @@
 }
 
 #dashed_line_plot {
+	top: 5px;
 	bottom: 100px; 
 	left: 100px;
 	right: 100px;
-	height: 600px;
-	width: 800px;*/	
 }
 
 .section_claass {
