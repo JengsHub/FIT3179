@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": "United Nation's prediction of Life Expectancy.",
-  "height": 450,
+  "height": 400,
   "width": 600,
   "background":"azure",
   "layer": [
@@ -54,7 +54,7 @@
         "y": {
           "field": "Life_expectancy",
           "type": "quantitative",
-          "scale": {"domain": [40, 90]},
+          "scale": {"domain": [45, 90]},
           "title": "Life Expectancy"
         },
         "strokeDash": {"field": "Predicted", "type": "nominal"},
@@ -84,7 +84,7 @@
         "y": {
           "field": "Life_expectancy",
           "type": "quantitative",
-          "scale": {"domain": [40, 95]}
+          "scale": {"domain": [45, 95]}
         },
         "strokeDash": {"field": "Predicted", "type": "nominal"},
         "tooltip": [
@@ -113,7 +113,7 @@
         "y": {
           "field": "Life_expectancy",
           "type": "quantitative",
-          "scale": {"domain": [40, 90]}
+          "scale": {"domain": [45, 90]}
         },
         "strokeDash": {"field": "Predicted", "type": "nominal"},
         "tooltip": [
@@ -142,7 +142,7 @@
         "y": {
           "field": "Life_expectancy",
           "type": "quantitative",
-          "scale": {"domain": [40, 90]}
+          "scale": {"domain": [45, 90]}
         },
         "strokeDash": {"field": "Predicted", "type": "nominal"},
         "tooltip": [
@@ -171,7 +171,7 @@
         "y": {
           "field": "Life_expectancy",
           "type": "quantitative",
-          "scale": {"domain": [40, 90]}
+          "scale": {"domain": [45, 90]}
         },
         "strokeDash": {"field": "Predicted", "type": "nominal"},
         "tooltip": [
@@ -200,7 +200,7 @@
         "y": {
           "field": "Life_expectancy",
           "type": "quantitative",
-          "scale": {"domain": [40, 90]}
+          "scale": {"domain": [45, 90]}
         },
         "strokeDash": {"field": "Predicted", "type": "nominal"},
         "tooltip": [
@@ -229,7 +229,7 @@
         "y": {
           "field": "Life_expectancy",
           "type": "quantitative",
-          "scale": {"domain": [40, 90]}
+          "scale": {"domain": [45, 90]}
         },
         "strokeDash": {"field": "Predicted", "type": "nominal"},
         "tooltip": [
@@ -258,7 +258,7 @@
         "y": {
           "field": "Life_expectancy",
           "type": "quantitative",
-          "scale": {"domain": [40, 90]}
+          "scale": {"domain": [45, 90]}
         },
         "strokeDash": {"field": "Predicted", "type": "nominal"},
         "tooltip": [
@@ -287,7 +287,7 @@
         "y": {
           "field": "Life_expectancy",
           "type": "quantitative",
-          "scale": {"domain": [40, 90]}
+          "scale": {"domain": [45, 90]}
         },
         "strokeDash": {"field": "Predicted", "type": "nominal"},
         "tooltip": [
@@ -316,7 +316,7 @@
         "y": {
           "field": "Life_expectancy",
           "type": "quantitative",
-          "scale": {"domain": [40, 90]}
+          "scale": {"domain": [45, 90]}
         },
         "strokeDash": {"field": "Predicted", "type": "nominal"},
         "tooltip": [
@@ -345,7 +345,7 @@
         "y": {
           "field": "Life_expectancy",
           "type": "quantitative",
-          "scale": {"domain": [40, 90]}
+          "scale": {"domain": [45, 90]}
         },
         "strokeDash": {"field": "Predicted", "type": "nominal"},
         "tooltip": [
@@ -374,7 +374,7 @@
         "y": {
           "field": "Life_expectancy",
           "type": "quantitative",
-          "scale": {"domain": [40, 90]}
+          "scale": {"domain": [45, 90]}
         },
         "strokeDash": {"field": "Predicted", "type": "nominal", "legend": null},
         "tooltip": [
