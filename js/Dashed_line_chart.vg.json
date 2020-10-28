@@ -14,7 +14,10 @@
         "x": {
           "field": "Year",
           "type": "ordinal",
-          "axis": {"values": [2000, 2020, 2040, 2060, 2080, 2099]},
+          "axis": {
+            "values": [2000, 2020, 2040, 2060, 2080, 2099],
+            "labelAngle": 0
+            },
           "title": "Year"
         },
         "y": {
