@@ -3,6 +3,7 @@
   "title": "Life expectancy vs. Healthcare expenditure from 1995 to 2014",
   "width": 600,
   "height": 400,
+  "background":"azure",
   "data": {
     "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/LE_vs_HE_2014.csv"
   },
@@ -47,15 +48,11 @@
             "type": "quantitative",
             "title": "Life expectancy"
           },
-          {
-            "field": "Year",
-            "type": "ordinal",
-            "title": "Year"
-          }
+          {"field": "Year", "type": "ordinal", "title": "Year"}
         ],
         "opacity": {
-          "condition": {"selection": "continent_highlight", "value": 0.6},
-          "value": 0.2
+          "condition": {"selection": "continent_highlight", "value": 0.5},
+          "value": 0
         }
       }
     },
@@ -89,15 +86,11 @@
             "type": "quantitative",
             "title": "Life expectancy"
           },
-          {
-            "field": "Year",
-            "type": "ordinal",
-            "title": "Year"
-          }
+          {"field": "Year", "type": "ordinal", "title": "Year"}
         ],
         "opacity": {
-          "condition": {"selection": "continent_highlight", "value": 0.6},
-          "value": 0.2
+          "condition": {"selection": "continent_highlight", "value": 0.5},
+          "value": 0
         }
       }
     },
@@ -145,8 +138,8 @@
           }
         },
         "opacity": {
-          "condition": {"selection": "continent_highlight", "value": 1},
-          "value": 0.2
+          "condition": {"selection": "continent_highlight", "value": 0.5},
+          "value": 0
         }
       }
     }
