@@ -7,6 +7,9 @@
   "data": {
     "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/LE_vs_HE_2014.csv"
   },
+  "transform": [{
+    "filter": "datum.Total_population > 25000000"
+  }],
   "layer": [
     {
       "selection": {
@@ -62,7 +65,9 @@
       "data": {
         "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/LE_vs_HE_1995.csv"
       },
-      "transform": [],
+      "transform": [{
+    "filter": "datum.Total_population > 16000000"
+  }],
       "mark": {"type": "circle", "opacity": 1},
       "encoding": {
         "x": {
@@ -103,6 +108,11 @@
         "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/LE_vs_HE.csv"
       },
       "mark": "line",
+      "transform": [
+        {
+          "filter": "datum.Total_population > 16000000 "
+        }
+        ],
       "encoding": {
         "detail": {"field": "Country", "type": "nominal"},
         "x": {
