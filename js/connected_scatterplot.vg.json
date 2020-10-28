@@ -41,12 +41,14 @@
           {
             "field": "Health_expenditure",
             "type": "quantitative",
-            "title": "Healthcare Expenditure ($)"
+            "title": "Healthcare Expenditure ($)",
+            "format": ".2f"
           },
           {
             "field": "Life_expectancy",
             "type": "quantitative",
-            "title": "Life expectancy"
+            "title": "Life expectancy",
+            "format": ".2f"
           },
           {"field": "Year", "type": "ordinal", "title": "Year"}
         ],
@@ -79,12 +81,14 @@
           {
             "field": "Health_expenditure",
             "type": "quantitative",
-            "title": "Healthcare Expenditure ($)"
+            "title": "Healthcare Expenditure ($)",
+            "format": ".2f"
           },
           {
             "field": "Life_expectancy",
             "type": "quantitative",
-            "title": "Life expectancy"
+            "title": "Life expectancy",
+            "format": ".2f"
           },
           {"field": "Year", "type": "ordinal", "title": "Year"}
         ],
