@@ -1,5 +1,5 @@
 #LE_choropleth_map {
-	top:100px;
+	top:5px;
 	bottom: 100px; 
 	left: 100px;
 	right: 100px;
@@ -8,7 +8,7 @@
 }
 
 #LE_choropleth_map_2019 {
-	top:100px;
+	top:5px;
 	bottom: 100px; 
 	left: 100px;
 	right: 100px;
@@ -17,7 +17,7 @@
 }
 
 #Bubble_chart {
-	top:100px;
+	top:5px;
 	bottom: 100px; 
 	left: 100px;
 	right: 100px;
@@ -26,7 +26,7 @@
 }
 
 #Isotype_chart {
-	top:100px;
+	top:5px;
 	bottom: 100px; 
 	left: 100px;
 	right: 100px;
@@ -34,7 +34,7 @@
 	width: 800px;*/	
 }
 #connected_scatterplot {
-	top:100px;
+	top:5px;
 	bottom: 100px; 
 	left: 100px;
 	right: 100px;
@@ -50,9 +50,9 @@
 }
 
 .section_claass {
-	height: 700px;
+	height: 600px;
 }
 
 .regular_section {
-	height: 600px;
+	height: 550px;
 }
