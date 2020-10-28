@@ -169,6 +169,7 @@
   var spec2 = "js/choropleth_map.vg.json";
   vegaEmbed('#LE_choropleth_map', spec2).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    vegaEmbed('#vis', spec, {"actions": false});
   }).catch(console.error);
   
   var spec3 = "js/choropleth_map_2019.vg.json";
