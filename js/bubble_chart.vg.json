@@ -3,14 +3,15 @@
   "title": "Life Expectancy of men vs women in the year 2019",
   "width": 500,
   "height": 381,
+  "background":"azure",
   "data": {
     "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/LE_men_women_2019.csv"
   },
   "params": [
-     {
-        "name": "Population_Above",
-        "value": 0,
-        "bind": {
+    {
+      "name": "Population_Above",
+      "value": 0,
+      "bind": {
         "input": "range",
         "min": 0,
         "max": 100000000,
@@ -31,7 +32,7 @@
           "Asia",
           "Oceania"
         ],
-      "labels":[
+        "labels": [
           "Show All",
           "North America",
           "South America",
@@ -40,21 +41,23 @@
           "Asia",
           "Oceania"
         ],
-      "name": "Continent Selection: "
-        }
-    }    
+        "name": "Continent Selection: "
+      }
+    }
   ],
   "layer": [
     {
       "transform": [
         {"filter": "datum.Total_population > Population_Above"},
-        {"filter": "Continent_selection == null || datum.Continent ==  Continent_selection"}
+        {
+          "filter": "Continent_selection == null || datum.Continent ==  Continent_selection"
+        }
       ],
       "selection": {
-        "continent_highlight" : {
-        "type" : "multi",
-        "fields": ["Continent"],
-        "bind": "legend"
+        "continent_highlight": {
+          "type": "multi",
+          "fields": ["Continent"],
+          "bind": "legend"
         }
       },
       "mark": "circle",
@@ -81,7 +84,28 @@
           "legend": null,
           "scale": {"rangeMax": 5000}
         },
-        "color": {"field": "Continent", "type": "nominal"},
+        "color": {
+          "field": "Continent", 
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "North America",
+              "South America",
+              "Europe",
+              "Africa",
+              "Asia",
+              "Oceania"
+            ],
+            "range": [
+              "#e41a1c",
+              "#984ea3",
+              "#ff7f00",
+              "#df744a",
+              "#377eb8",
+              "#a65628"
+            ]
+          }
+          },
         "tooltip": [
           {"field": "Country", "type": "nominal", "title": "Country"},
           {
@@ -105,20 +129,24 @@
         "opacity": {
           "condition": {"selection": "continent_highlight", "value": 0.6},
           "value": 0.2
-  }
+        }
       }
     },
     {
-      "data": {
-        "values":[
-          {"x": 50, "y": 50}, 
-          {"x": 90, "y": 90}
-        ]
-      },
+      "data": {"values": [{"x": 50, "y": 50}, {"x": 90, "y": 90}]},
       "mark": {"type": "line", "color": "firebrick", "opacity": 0.2},
       "encoding": {
         "x": {"field": "x", "type": "quantitative"},
         "y": {"field": "y", "type": "quantitative"}
+      }
+    },
+    {
+      "data": {"values": [{"x": 85, "y": 85, "text": "Median Line"}]},
+      "mark": {"type": "text", "opacity": 0.8, "dx": 25, "dy": 15, "color":"firebrick"},
+      "encoding": {
+        "x": {"field": "x", "type": "quantitative"},
+        "y": {"field": "y", "type": "quantitative"},
+        "text": {"field":"text"}
       }
     }
   ]
