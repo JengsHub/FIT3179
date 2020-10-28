@@ -36,12 +36,14 @@
           {
             "field": " Life_satisfaction",
             "type": "quantitative",
-            "title": "Life Satisfaction"
+            "title": "Life Satisfaction",
+            "format": ".2f"
           },
           {
             "field": " Life_expectancy",
             "type": "quantitative",
-            "title": "Life Expectancy"
+            "title": "Life Expectancy",
+            "format": ".2f"
           }
         ],
         "text": {"field": "emoji", "type": "nominal"},
