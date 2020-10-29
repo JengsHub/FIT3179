@@ -26,7 +26,45 @@
           "scale": {"domain": [45, 90]},
           "title": "Life Expectancy"
         },
-        "color": {"field": "Country", "type": "nominal"},
+        "color": {
+          "field": "Country", 
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Australia",
+              "Brazil",
+              "Canada",
+              "Central African Republic",
+              "China",
+              "Ethiopia",
+              "France",
+              "Germany",
+              "Hong Kong",
+              "India",
+              "Mexico",
+              "Nigeria",
+              "Papua New Guinea",
+              "United States"
+            ],
+            "range": [
+              "#7da0c2",
+              "#f4a95d",
+              "#e88988",
+              "#F96606",
+              "#83be81",
+              "#efda75",
+              "#c5a1be",
+              "#fbbac1",
+              "#EE1E09",
+              "#cbc8c5",
+              "#F36CF5",
+              "#4F59F2",
+              "#7F2EC2",
+              "#98ccc9"
+
+            ]
+          }
+          },
         "tooltip": [
           {"field": "Country", "type": "nominal"},
           {
@@ -43,7 +81,7 @@
       "data": {
         "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/Australian_prediction.csv"
       },
-      "mark": {"type": "line", "color": "#81a0c2", "opacity": 1},
+      "mark": {"type": "line", "color": "#7da0c2", "opacity": 1},
       "encoding": {
         "x": {
           "field": "Year",
@@ -74,7 +112,7 @@
       "data": {
         "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/Brazil_prediction.csv"
       },
-      "mark": {"type": "line", "color": "#f8a95d", "opacity": 1},
+      "mark": {"type": "line", "color": "#f4a95d", "opacity": 1},
       "encoding": {
         "x": {
           "field": "Year",
@@ -103,7 +141,7 @@
       "data": {
         "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/Canada_prediciton.csv"
       },
-      "mark": {"type": "line", "color": "#ec8988", "opacity": 1},
+      "mark": {"type": "line", "color": "#e88988", "opacity": 1},
       "encoding": {
         "x": {
           "field": "Year",
@@ -132,7 +170,7 @@
       "data": {
         "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/China_prediction.csv"
       },
-      "mark": {"type": "line", "color": "#9cccc9", "opacity": 1},
+      "mark": {"type": "line", "color": "#83be81", "opacity": 1},
       "encoding": {
         "x": {
           "field": "Year",
@@ -161,7 +199,7 @@
       "data": {
         "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/Ethiopia_prediction.csv"
       },
-      "mark": {"type": "line", "color": "#87be81", "opacity": 1},
+      "mark": {"type": "line", "color": "#efda75", "opacity": 1},
       "encoding": {
         "x": {
           "field": "Year",
@@ -190,7 +228,7 @@
       "data": {
         "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/France_predicted.csv"
       },
-      "mark": {"type": "line", "color": "#f3da75", "opacity": 1},
+      "mark": {"type": "line", "color": "#c5a1be", "opacity": 1},
       "encoding": {
         "x": {
           "field": "Year",
@@ -219,7 +257,7 @@
       "data": {
         "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/Germany_prediction.csv"
       },
-      "mark": {"type": "line", "color": "#c9a1be", "opacity": 1},
+      "mark": {"type": "line", "color": "#fbbac1", "opacity": 1},
       "encoding": {
         "x": {
           "field": "Year",
@@ -248,7 +286,7 @@
       "data": {
         "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/India_prediction.csv"
       },
-      "mark": {"type": "line", "color": "#ffbac1", "opacity": 1},
+      "mark": {"type": "line", "color": "#cbc8c5", "opacity": 1},
       "encoding": {
         "x": {
           "field": "Year",
@@ -277,7 +315,7 @@
       "data": {
         "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/Mexico_prediction.csv"
       },
-      "mark": {"type": "line", "color": "#ba9e8d", "opacity": 1},
+      "mark": {"type": "line", "color": "#F36CF5", "opacity": 1},
       "encoding": {
         "x": {
           "field": "Year",
@@ -306,7 +344,7 @@
       "data": {
         "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/Nigeria_prediction.csv"
       },
-      "mark": {"type": "line", "color": "#cfc8c5", "opacity": 1},
+      "mark": {"type": "line", "color": "#4F59F2", "opacity": 1},
       "encoding": {
         "x": {
           "field": "Year",
@@ -335,7 +373,7 @@
       "data": {
         "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/PNG_prediction.csv"
       },
-      "mark": {"type": "line", "color": "#81a0c2", "opacity": 1},
+      "mark": {"type": "line", "color": "#7F2EC2", "opacity": 1},
       "encoding": {
         "x": {
           "field": "Year",
@@ -362,9 +400,9 @@
     },
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/US_prediction.csv"
+        "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/CentralAfricanRepublic_predict.csv"
       },
-      "mark": {"type": "line", "color": "#f8a95d", "opacity": 1},
+      "mark": {"type": "line", "color": "#F96606", "opacity": 1},
       "encoding": {
         "x": {
           "field": "Year",
@@ -374,7 +412,7 @@
         "y": {
           "field": "Life_expectancy",
           "type": "quantitative",
-          "scale": {"domain": [45, 90]}
+          "scale": {"domain": [40, 98]}
         },
         "strokeDash": {"field": "Predicted", "type": "nominal", "legend": null},
         "tooltip": [
@@ -387,6 +425,73 @@
           },
           {"field": "Year", "type": "ordinal", "title": "Predicted Year"}
         ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/JengsHub/FIT3179/main/data/HongKong_predict.csv"
+      },
+      "mark": {"type": "line", "color": "#EE1E09", "opacity": 1},
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "ordinal",
+          "axis": {"values": [2000, 2020, 2040, 2060, 2080, 2099]}
+        },
+        "y": {
+          "field": "Life_expectancy",
+          "type": "quantitative",
+          "scale": {"domain": [45, 98]}
+        },
+        "strokeDash": {"field": "Predicted", "type": "nominal", "legend": null},
+        "tooltip": [
+          {"field": "Country", "type": "nominal"},
+          {
+            "field": "Life_expectancy",
+            "type": "quantitative",
+            "title": "Life Expectancy",
+            "format": ".2f"
+          },
+          {"field": "Year", "type": "ordinal", "title": "Predicted Year"}
+        ]
+      }
+    },
+    {
+      "data": {
+        "values":[{"x" :2075, "y": 98, "text": "Hong Kong citizens are predicted"},{"x" :2075, "y": 96, "text": "to have highest Life Expectancy"},{"x" :2075, "y": 94, "text": "in the world."}]
+      },
+      "mark": {"type": "text", "opacity": 1},
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "ordinal",
+          "axis": {"values": [2000, 2020, 2040, 2060, 2080, 2099]}
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative",
+          "scale": {"domain": [40, 98]}
+        },
+        "text": {"field": "text"}
+      }
+    },
+    {
+      "data": {
+        "values":[{"x" :2088, "y": 64, "text": "Central African Republic's"},{"x" :2088, "y": 62, "text": "remains the lowest"},{"x" :2088, "y": 60, "text": "in the world in 2099."}]
+      },
+      "mark": {"type": "text", "opacity": 1},
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "ordinal",
+          "axis": {"values": [2000, 2020, 2040, 2060, 2080, 2099]}
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative",
+          "scale": {"domain": [40, 98]}
+        },
+        "text": {"field": "text"}
       }
     }
   ]
