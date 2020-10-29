@@ -477,7 +477,7 @@
     },
     {
       "data": {
-        "values":[{"x" :2088, "y": 64, "text": "Central African Republic's"},{"x" :2088, "y": 62, "text": "remains the lowest"},{"x" :2088, "y": 60, "text": "in the world in 2099."}]
+        "values":[{"x" :2088, "y": 64, "text": "Central African Republic's"},{"x" :2088, "y": 62, "text": "Life Expectancy"},{"x" :2088, "y": 60, "text": "remains the lowest"},{"x" :2088, "y": 58, "text": "in the world in 2099."}]
       },
       "mark": {"type": "text", "opacity": 1},
       "encoding": {
